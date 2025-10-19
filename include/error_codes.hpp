@@ -1,0 +1,7 @@
+#ifndef PALADIN98_ERROR_CODES_HPP
+#define PALADIN98_ERROR_CODES_HPP
+enum class error_codes {
+  SUCCESS = 0,
+  UNHANDLED_EXCEPTION = 1,
+};
+#endif // PALADIN98_ERROR_CODES_HPP
