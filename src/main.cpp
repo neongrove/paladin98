@@ -1,6 +1,9 @@
 #include "window/window.hpp"
 #include <error_codes.hpp>
 int main() {
-  window *game_window = new window();
+  paladin::window game_window;
+  while (true) {
+
+  }
   return static_cast<int>(error_codes::SUCCESS);
 }
