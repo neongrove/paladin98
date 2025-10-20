@@ -5,6 +5,9 @@ project(paladin98)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Find packages
+find_package(Vulkan REQUIRED)
+find_package(SDL REQUIRED)
 # Automatically collect all source files in src/
 file(GLOB_RECURSE SOURCES
         "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c"
@@ -24,3 +27,6 @@ add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
 # Include current directory for headers
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+# Link against VCPKG
+target_link_libraries(${PROJECT_NAME} PRIVATE Vulkan::Vulkan SDL::SDL)
