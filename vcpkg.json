@@ -1,12 +1,15 @@
 {
-  "name" : "paladin98",
-  "version-string" : "1.0.0",
-  "builtin-baseline" : "74e6536215718009aae747d86d84b78376bf9e09",
-  "dependencies" : [ {
-    "name" : "vulkan",
-    "version>=" : "2023-12-17"
-  }, {
-    "name" : "sdl3",
-    "version>=" : "3.2.24"
-  } ]
+  "name": "paladin98",
+  "version-string": "1.0.0",
+  "builtin-baseline": "74e6536215718009aae747d86d84b78376bf9e09",
+  "dependencies": [
+    {
+      "name": "vulkan",
+      "version>=": "2023-12-17"
+    },
+    {
+      "name": "sdl3",
+      "version>=": "3.2.24"
+    }
+  ]
 }
